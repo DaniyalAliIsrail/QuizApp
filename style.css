@@ -7,7 +7,7 @@ body {
     background: #8800cc;
     font-family: 'Roboto', sans-serif;
 }
-satrt-quiz  button .start_quiz {
+.start-quiz {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,7 +19,7 @@ satrt-quiz  button .start_quiz {
     padding: 15px 30px;
     transition: all 0.2s ease;
 }
-.start_quiz:hover{
+.start-quiz:hover{
     color: #911ae2;
     background-color: white;
     border: 2px solid white;   
@@ -27,6 +27,9 @@ satrt-quiz  button .start_quiz {
 /* Inactice class js do gey wo us chez invisible krdega */
 .inactive{
     display: none;
+}
+.disabled{
+    pointer-events: none;
 }
 
 .quiz-box{
@@ -73,11 +76,7 @@ satrt-quiz  button .start_quiz {
     right: 3%;
     top: 38%;
 }
-.quiz-box .option:hover{
-    transition: all 0.2s ease;
-    background-color: #7b359e;
-    color: white;
-}
+
 .incorrect{
     background: rgb(211, 108, 108) ;
     color: rgb(129, 1, 1);
@@ -97,6 +96,7 @@ satrt-quiz  button .start_quiz {
     border-top: 2px dashed white;
     border: 1px solid balck;
     align-items: center;
+    height: 100px;
 }
 .footer-left{
     font: 1.1rem;
