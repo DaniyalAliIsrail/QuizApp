@@ -13,9 +13,16 @@
 </head>
 
 <body>
-
+         <div class="form">
+               <h2>Quiz Foam</h2>
+               <input type="text" name="" id="text" placeholder="First Name" required=""> 
+               <input type="text" name="" id="text" placeholder="LAast Name" required=""> 
+               <input type="email" name="" id="gmail" placeholder="Email" required="">
+               <input type="password" name="" id="password" placeholder="password" required="">
+               <button type="button" class="submit-btn">Submit</button>
+         </div>
         <div class="start-quiz inactive">Start Quiz</div>
-        <div class="quiz-box ">
+        <div class="quiz-box inactive">
                 <div>
                         <h1>Quiz App</h1>
                 </div>
@@ -40,10 +47,11 @@
         <div class="result-box inactive">
                 <h2>Result</h2>
                 <div class="result">
-                        <div>Total Question: <span>5</span></div>
-                        <div>Wright Anser: <span>3</span></div>
-                        <div>Wrong Answer: <span>2</span></div>
-                        <div>Percentage: <span>60.0%</span></div>
+                        <div class="total-que">Total Question: <span></span></div>
+                        <div class="right-ans">Wright Anser: <span></span></div>
+                        <div class="wrong-ans">Wrong Answer: <span></span></div>
+                        <div class="percentage">Percentage: <span></span></div>
+                        <div class="pass-fail"> result: <span>Pass</span></div>
                         <div class="result-footer">
                                 <div class="again-quiz next-btn">Again Quiz</div>
                                 <div class="exit next-btn">Exit</div>
