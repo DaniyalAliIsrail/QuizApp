@@ -56,9 +56,11 @@ var questions = [
     ],
   },
 ];
+//form
 const submit_btn =document.querySelector(".submit-btn")
 const form_btn =document.querySelector(".form")
-
+// const form_wrapper =document.querySelector(".form-wrapper")
+//start quiz
 const start_quiz = document.querySelector(".start-quiz");
 const quiz_box = document.querySelector(".quiz-box");
 const que_text = quiz_box.querySelector(".que-text");
@@ -74,10 +76,20 @@ const wrong_ans_r = document.querySelector(".wrong-ans span");
 const percentage = document.querySelector(".percentage span");
 const pass_fail =document.querySelector(".pass-fail span")
 
+function formHandler(){
+  var formWrapper = document.querySelector(".formWrapper")
+  var inputFields = document.querySelectorAll("input")
+  for(var input of inputFields){
+    if(!input.value){
+      alert("Enter Required field")
+      return
+    }
+  }
+}
+
 submit_btn.onclick =()=>{
   form_btn.classList.add("inactive")
   start_quiz.classList.remove("inactive")
-
 }
 //jesy show quiz k btn pr click ho to quiz wala ui display hojae or wo start quix wala `
 start_quiz.onclick = () => {
